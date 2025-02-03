@@ -2,37 +2,44 @@
 
 ForestSmokeDetection is a project for detecting smoke in forest environments. The goal is to fine-tune an object detection model (RT-DETR) to quickly identify the presence of smoke in forest images. This project is part of an effort to improve environmental monitoring and early warning systems.
 
+## Table of Contents
+
+- [Description](#description)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+
 ## Description
 
 This project aims to develop a system that automatically detects smoke in forest images. By fine-tuning an object detection model, we strive to create an efficient tool for monitoring forest areas and providing early alerts in case of smoke detection.
 
 ## Project Structure
-
+```plaintext
 ForestSmokeDetection/
-├── README.md                   # This file
-├── .gitignore                  # Files and directories to ignore in Git
-├── requirements.txt            # List of Python dependencies
-├── dataset/            # Need to import data from the notebook Data_Import_and_Training (using Kaggle)
+├── README.md                   
+├── .gitignore                  
+├── requirements.txt            
+├── dataset/            
 │   ├── images/
-│   │   ├── train/              # Training images
-│   │   └── val/                # Validation images
+│   │   ├── train/              
+│   │   └── val/                
 │   ├── labels/
-│   │   ├── train/              # Training annotations
-│   │   └── val/                # Validation annotations
-│   └── data.yaml               # Dataset configuration file
+│   │   ├── train/              
+│   │   └── val/                
+│   └── data.yaml               
 ├── notebooks/
-│   ├── Data_Import_and_Training.ipynb   # Notebook for data import and model training
-│   └── Inference_Evaluation.ipynb         # Notebook for model inference and evaluation
-├── src/                        # Additional source code (optional)
-└── SmokeDetectEnv/             # Virtual environment folder (should be ignored by Git)
+│   ├── Data_Import_and_Training.ipynb   
+│   └── Inference_Evaluation.ipynb        
+├── src/                        
+└── SmokeDetectEnv/             
+
+## Prerequisites
+- Python 3.8 or higher
+- Git
+- A virtual environment manager 
 
 
-Prerequisites
-Python 3.8 or higher
-Git
-A virtual environment manager 
-
-Installation
+## Installation
 Cloning the Repository
 Clone the repository to your local machine using the following command:
 
@@ -40,33 +47,34 @@ Clone the repository to your local machine using the following command:
 git clone https://github.com/VictorPro07/ForestSmokeDetection.git
 cd ForestSmokeDetection
 
-Creating and Activating a Virtual Environment
+## Creating and Activating a Virtual Environment
 
 Using venv:
-
+```bash
 python -m venv SomkeDetectEnv
 source SomkeDetectEnv/bin/activate   # On Linux/MacOS
+```bash
 
-
-Installing Dependencies
+## Installing Dependencies
 Install the required Python packages with:
-
+```bash
 pip install -r requirements.txt
+```bash
 
-Usage
+# Usage
 
-Model Training
+## Model Training
 Open the Data_Import_and_Training.ipynb notebook using VSCode, Jupyter Notebook, or JupyterLab.
 Ensure that the dataset/data.yaml file correctly points to your image and annotation directories.
 Execute the cells in the notebook to start training the model and also to import the dataset.
 
 
-Inference and Evaluation
+## Inference and Evaluation
 Open the Inference_Evaluation.ipynb notebook.
 This notebook allows you to test the trained model on new images and evaluate its performance.
 Follow the instructions within the notebook to run inference and visualize the results.
 
-Dataset Configuration
+## Dataset Configuration
 The dataset/data.yaml file contains the dataset configuration, including:
 train: Path to the training images.
 val: Path to the validation images.
