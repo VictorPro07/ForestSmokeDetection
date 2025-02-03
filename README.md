@@ -2,6 +2,9 @@
 
 ForestSmokeDetection is a project for detecting smoke in forest environments. The goal is to fine-tune an object detection model (RT-DETR) to quickly identify the presence of smoke in forest images. This project is part of an effort to improve environmental monitoring and early warning systems.
 
+> **⚠️ Warning:**  
+> Please make sure to import the cleaned dataset from kaggle as described in Data_Import_and_Training notebook
+
 ## Table of Contents
 
 - [Description](#description)
