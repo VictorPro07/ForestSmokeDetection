@@ -1,12 +1,10 @@
-# Environnement virtuel
-# Environnement virtuel
+#Virtual Env
 SmokeDetectEnv/
 
-# Fichiers temporaires Python
 __pycache__/
 
 
-# Fichiers de données trop volumineux (si besoin, à ajuster)
+# Dataset
 Forest-Smoke-Dataset/
 
 runs/
