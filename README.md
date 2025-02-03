@@ -31,7 +31,8 @@ ForestSmokeDetection/
 │   ├── Data_Import_and_Training.ipynb   
 │   └── Inference_Evaluation.ipynb        
 ├── src/                        
-└── SmokeDetectEnv/             
+└── SmokeDetectEnv/        
+ ```
 ---
 
 Prerequisites
